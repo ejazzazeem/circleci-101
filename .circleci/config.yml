@@ -14,4 +14,4 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-          command: echo This is my circleci project.
+          command: echo This is my circleci project v2.
