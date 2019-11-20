@@ -18,7 +18,9 @@ jobs:
       - run:
           name: Print the Message
           command: echo This is my circleci project v2.
-
+      - run:
+          name: install sshpass
+          command: sudo apt-get install sshpass
       - run:
           name: Fix ssh Could not resolve hostname
           command: ssh-keyscan ubuntu@52.90.159.235 >> ~/.ssh/known_hosts
