@@ -20,10 +20,10 @@ jobs:
           command: echo This is my circleci project v2.
       - add_ssh_keys:
          fingerprints:
-           - "5c:68:c9:53:4c:66:81:ef:40:82:40:31:60:60:f8:ce"
+           - "58:ed:89:52:ee:1a:95:ac:da:29:97:fc:11:32:92:90"
       - run:
           name: SSH to instance
-          command: sshpass -p "ijaz1986@" ssh -o StrictHostKeyChecking=no casanova@52.91.191.112
+          command: ssh -o StrictHostKeyChecking=no casanova@52.91.191.112
       - run:
           name: Print the Current Time
           command: date
