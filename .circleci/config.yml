@@ -20,7 +20,7 @@ jobs:
           command: echo This is my circleci project v2.
       - run:
           name: Fix ssh Could not resolve hostname
-          command: ssh-keyscan ubuntu@52.90.159.235 >> ~/.ssh/known_hosts
+          command: ssh-keyscan ubuntu@52.91.191.112 >> ~/.ssh/known_hosts
           
       - add_ssh_keys:
          fingerprints:
